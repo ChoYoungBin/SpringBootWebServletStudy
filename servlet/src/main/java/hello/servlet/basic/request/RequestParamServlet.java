@@ -22,9 +22,9 @@ public class RequestParamServlet extends HttpServlet{
         System.out.println("wow : " + wow);
 
         System.out.println("[이름이 같은 복수의 파라미터 조회]");
-        String[] wows = request.getParameterValues("wow");
-        for(String wo : wows){
-            System.out.println("wow : " + wo);
+        String[] usernames = request.getParameterValues("username");
+        for(String name : usernames){
+            System.out.println("username : " + name);
         }
 
         response.getWriter().write("ok");
