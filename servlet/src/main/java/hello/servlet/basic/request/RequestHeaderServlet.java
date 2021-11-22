@@ -14,7 +14,6 @@ public class RequestHeaderServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         extracted(request);
 
-
         showHeaders(request);
 
         showLocales(request);
@@ -24,8 +23,6 @@ public class RequestHeaderServlet extends HttpServlet {
         showContents(request);
 
         showNetworkInfo(request);
-
-
     }
 
     private void showNetworkInfo(HttpServletRequest request) {
